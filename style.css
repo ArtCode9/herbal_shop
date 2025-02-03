@@ -4,18 +4,17 @@
    box-sizing: border-box;
 }
 body{
-   background-color:whitesmoke;
+   background-color: white;
 }
 #container{
    width: 100%;
-   height: 200vh;
+   height: 100vh;
    margin:0;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-template-rows: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 2fr 1fr;
    grid-template-areas: 
               "nav nav nav nav"
-              "ma  ma  ma  ma"
               "ma  ma  ma  ma"
               "fo  fo  fo  fo";
 }
@@ -26,7 +25,7 @@ body{
    width: 100%;
    height: 100%;
    background-image: url("src/img5.jpg");
-   background-size: cover;
+   background-size: 100%;
    background-repeat: no-repeat;
    background-position: right 35% bottom 45%;
    border-bottom-right-radius: 33px;
@@ -39,6 +38,7 @@ body{
                         "headBar headBar";
 }
 /* this is  nav bar link */
+/* =================navBox1====================== */
 #navBox1 {
    grid-area: navBar;
    display: flex;
@@ -53,28 +53,34 @@ body{
    font-size: 23px;
 }
 #navBox1 a:hover{
-   color: lightblue;
+   color: rgb(238, 175, 48);
+   filter: drop-shadow(5px 15px 15px black);
 }
 #iconNavBox{
    width: 100%;
-   display: flex;
+   display: inline-flex;      /* pick this attribute from site*/
+   vertical-align: middle;
+   align-items: center;
    justify-content: right;
-   padding: 19px;
+   padding: 1em 0;
 }
 .iconNav {
    width: 32px;
    height: 32px;
    margin-left: 24px;
 }
-/* ======================================= */
+.iconNav:hover {
+   cursor: pointer;
+   filter: drop-shadow(5px 5px 15px black);
+}
+/* =================navBox2====================== */
 #navBox2 {
    grid-area: logBar;
    display: flex;
    margin-top: 3%;
    margin-left: 12%; 
-   
 }
-/* ======================================== */
+/* =================navBox3====================== */
 #navBox3 {
    grid-area: headBar;
    display: grid;
@@ -86,4 +92,95 @@ body{
    color: black;
    font-size: 66px;
    font-family: system-ui, -apple-system;
+}
+/* ===================Main==========================*/
+#mainSection {
+   grid-area: ma;
+
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   margin: 12px 6px;   
+   align-content: center;
+   justify-content: center;
+}
+.cardShop{
+   width: 95%;
+   height: 330px;
+   background-color: rgb(228, 227, 227, 0.6);
+   border-radius: 22px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 2px 4px 6px rgb(145, 144, 144);
+   margin: 2px;
+}
+/* ===================Footer==========================*/
+.footer {
+   grid-area: fo;
+   width: 100%;
+   height: 100%;
+   border: 2px solid black;
+   background-image: url("src/img5.jpg");
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-position: right 35% bottom 45%;
+   border-top-left-radius: 33px;
+   border-top-right-radius: 33px;
+   display: grid;
+   gap: 9px;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 2fr 1fr;
+   grid-template-areas: 
+               "fa fb3 fb2 fb1"
+               "fc fc fc fc";
+   justify-items: center;
+   justify-content: center;
+   text-align: center;
+}
+#fotImg{
+   grid-area: fa;
+   width: 100%;
+   margin-top: 38px;
+   margin-left: 22px;
+   border: 2px solid black;
+}
+#footCat{
+   grid-area: fb1;
+   height: 120px;
+   display: flex;
+   flex-direction: column;
+   border: 2px solid black;
+}
+#footCat2 {
+   grid-area: fb2;
+   height: 120px;
+   display: flex;
+   flex-direction: column;
+   border: 2px solid black;
+}
+#footCat a {
+   color: black;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 23px;  
+   border: 2px solid black;
+   height: 33px;
+}
+#footCat2 a {
+   color: black;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 23px;  
+   border: 2px solid black;
+   height: 33px;
+}
+#copyRight{
+   grid-area: fc;
+   width: 100%;
+   height: 46px;
+   border-top: 1px solid black;
 }
