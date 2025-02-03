@@ -29,6 +29,19 @@
                      <div id="navBox3">
                            <h1>Herbs Healing Your Pain</h1>
                      </div>
+
+                     <div id="navSlider" class="slider">
+                              <img class="navImg slide" src="src/img3.jpg" alt="image1">      
+                              <img class="navImg slide" src="src/img2.jpg" alt="image1">      
+                              <img class="navImg slide" src="src/shopcart.png" alt="image1">      
+                              <img class="navImg slide" src="src/img6.jpg" alt="image1">      
+                              <img class="navImg slide" src="src/profile.png" alt="image1"> 
+                              
+                              <button class="slider__btn slider__btn--left">&larr;</button>
+                              <button class="slider__btn slider__btn--right">&rarr;</button>
+
+                              
+                     </div>
             </div>
 
             <div id="mainSection">
@@ -41,35 +54,33 @@
                <div class="cardShop">7</div>
                <div class="cardShop">8</div>
                <div class="cardShop">9</div>
-               <div class="cardShop">1</div>
-               <div class="cardShop">2</div>
-               <div class="cardShop">3</div>
-               <div class="cardShop">4</div>
-               <div class="cardShop">5</div>
-               <div class="cardShop">6</div>
-               <div class="cardShop">7</div>
-               <div class="cardShop">8</div>
-               <div class="cardShop">9</div>
             </div>
 
             <div class="footer">
-                     <div id="fotImg">
-                              <img src="src/logo.png" alt="herbal shop">
-                     </div>
+                  
+                   <div class="boxFoot">
 
-                     <div id="footCat">
-                           <a href="#">Product</a>
-                           <a href="#">About Us</a>
-                           <a href="#">Contact</a>
-                     </div>
-                     <div id="footCat2">
-                           <a href="#">Home</a>
-                           <a href="#">Blog</a>
-                     </div>
+                        <div id="logofoot">
+                              <img src="src/logo.png" alt="Herbal shop">
+                        </div>
 
-                     <div id="copyRight">
-                        <h3>All this belong to &copy Artcode9</h3>
-                     </div>
+                        <div id="fbox1">
+                              <a class="aFoot" href="#">Home</a>
+                              <a class="aFoot" href="#">About</a>
+                              <a class="aFoot" href="#">Product</a>
+                        </div>
+
+                        <div id="fbox2">
+                              <a class="aFoot" href="#">Herbs</a>
+                              <a class="aFoot" href="#">Potion</a>
+                              <a class="aFoot" href="#">Plants</a>
+                              <a class="aFoot" href="#">Mix Herb</a>
+                        </div>
+                   </div>
+
+                  <div class="copyFot">
+                        <p>&copy;ArtCode</p>
+                  </div>
             </div>
       </div>
 
