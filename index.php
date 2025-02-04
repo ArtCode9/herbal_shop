@@ -17,8 +17,14 @@
                         <a href="#contact">Contact</a>
                         <a href="#about">About</a>
                         <div id="iconNavBox">
-                           <img class="iconNav" src="src/shopcart.png" alt="shopcart">
-                           <img class="iconNav" src="src/profile.png" alt="">
+                           <div class="make-center"> 
+                              <img class="iconNav" src="src/shopcart.png" alt="shopcart">
+                              <p>سبد خرید</p>
+                           </div>
+                           <div class="make-center">
+                              <img class="iconNav" src="src/profile.png" alt="">
+                              <p>ورود</p>
+                           </div>
                         </div>
                      </div>
                      
@@ -60,13 +66,47 @@
             </div>
 
             <div class="slider">
-                     <img class="cardImgShop" src="src/amino-zink.jpg" alt="amino-zink">   
-                     <img class="cardImgShop" src="src/amino-zink.jpg" alt="amino-zink">   
-                     <img class="cardImgShop" src="src/amino-zink.jpg" alt="amino-zink">   
-                     <img class="cardImgShop" src="src/amino-zink.jpg" alt="amino-zink">   
-                     <img class="cardImgShop" src="src/amino-zink.jpg" alt="amino-zink">   
-                     <img class="cardImgShop" src="src/amino-zink.jpg" alt="amino-zink">   
-                     <img class="cardImgShop" src="src/amino-zink.jpg" alt="amino-zink">   
+                  <!-- Slideshow container -->
+                  <div class="slideshow-container">
+
+                  <!-- Full-width images with number and caption text -->
+                  <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="src/slideImg1.png" style="width:100%;height:195px">
+                  <div class="text">Caption Text</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="src/slideImg2.png" style="width:100%;height:195px">
+                  <div class="text">Caption Two</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="src/slideImg3.jpeg" style="width:100%;height:195px">
+                  <div class="text">Caption Three</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="src/slideImg1.png" style="width:100%;height:195px">
+                  <div class="text">Caption Four</div>
+                  </div>
+
+                  <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                  <br>
+
+                  <!-- The dots/circles -->
+                  <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                  <span class="dot" onclick="currentSlide(4)"></span>
+                  </div> 
             </div>            
 
             <div id="mainSection">
