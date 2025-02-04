@@ -12,9 +12,11 @@ body{
    margin:0;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-template-rows: 1fr 2fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
    grid-template-areas: 
               "nav nav nav nav"
+              "cat cat cat cat"
+              "sli sli sli sli"
               "ma  ma  ma  ma"
               "fo  fo  fo  fo";
 }
@@ -33,10 +35,10 @@ body{
    box-shadow:  0px 19px 22px -12px black;
    display: grid;
    grid-template-columns: 1fr 2fr;
-   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
    grid-template-areas: "logBar  navBar"
                         "headBar headBar"
-                        "slide slide";
+                        ;
 }
 /* this is  nav bar link */
 /* =================navBox1====================== */
@@ -94,88 +96,97 @@ body{
    font-size: 66px;
    font-family: system-ui, -apple-system;
 }
-#navSlider {
-   grid-area: slide;
-   width: 80%;
-   overflow: hidden;
-   margin-top: 22px;
-   margin-bottom: 32px;
-}
-.navImg{
-   width: 80px;
-   height: 54px;
-}
+/* ======================slider===================== */
 .slider {
-   width: 100%;
-   height: 220px;
-   margin: 0 auto;
-   position: relative;
-   /* IN THE END */
-   overflow: hidden;
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
- .slide {
-   position: absolute;
-   top: 0;
+   grid-area: sli;
+   padding: 16px;
+   margin-top: 22px;
+   margin-bottom: 22px;
+   border-bottom: 2px solid black;
+}
+/* ===============category==========================*/
+.category{
+   grid-area: cat;
+   display: inline-flex;
+   justify-content: space-around;
    width: 80%;
-   height: 220px;
- 
-   display: flex;
+   margin: 33px auto ;
+   align-content: center;
    align-items: center;
+}
+.categoryBox{
+   width: 66px;
+   height: 66px;
+   border: 1px solid black;
+   border-radius: 50%;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
    justify-content: center;
- 
-   /* THIS creates the animation! */
-   transition: transform 1s;
- }
- .slider__btn {
-   position: absolute;
-   top: 50%;
-   z-index: 10;
- 
-   border: none;
-   background: transparent;
-   font-family: inherit;
-   color: gold;
-   
-   height: 32px;
-   width: 32px;
-   font-size: 22px;
+   align-items: center;
+}
+.categoryBox:hover {
+   border: 2px solid lightgreen;
+   background-color: rgba(133, 242, 45, 0.2);
    cursor: pointer;
- }
- 
- .slider__btn--left {
-   left: 6%;
-   transform: translate(-50%, -50%);
- }
- 
- .slider__btn--right {
-   right: 6%;
-   transform: translate(50%, -50%);
- }
+}
+.categoryImg{
+   width: 23px;
+   height: 23px;
+}
 /* ===================Main==========================*/
 #mainSection {
    grid-area: ma;
 
    width: 100%;
    display: grid;
-   grid-template-columns: repeat(3, 1fr);
+   grid-template-columns: repeat(4, 1fr);
    grid-template-rows: repeat(3, 1fr);
    margin: 12px 6px;   
    align-content: center;
    justify-content: center;
 }
 .cardShop{
-   width: 95%;
-   height: 330px;
+   width: 88%;
+   height: 230px;
    background-color: rgb(228, 227, 227, 0.6);
    border-radius: 22px;
    display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
    box-shadow: 2px 4px 6px rgb(145, 144, 144);
    margin: 2px;
+}
+.cardShop p{
+   color: rgb(116, 113, 113);
+   font-size: 12px;
+}
+.cardImgShop{
+   width: 130px;
+   height: 140px;
+   border-radius: 16px;
+}
+.cardPlusShop {
+   width: 26px;
+   height: 26px;
+}
+.cardPlusShop:hover {
+   cursor: pointer;
+   background-color: lightgreen;
+   border-radius: 50%;
+}
+.cardShopCart{
+   width: 80%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-content: center;
+   align-items: center;
+}
+.cardShopCart p{
+   text-decoration: line-through;
+   color: red;
 }
 /* ===================Footer==========================*/
 .footer {
