@@ -46,7 +46,7 @@ body{
    justify-content: center;
    align-content: center;
    align-items: center;
-   padding: 3px;
+   padding: 10px;
 }
 .make-center p {
    font-size: 12px;
@@ -77,12 +77,11 @@ body{
    vertical-align: middle;
    align-items: center;
    justify-content: right;
-   padding: 1em 0;
+   
 }
 .iconNav {
    width: 32px;
    height: 32px;
-   margin-left: 24px;
 }
 .iconNav:hover {
    cursor: pointer;
