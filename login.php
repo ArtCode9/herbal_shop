@@ -30,6 +30,16 @@
          };
 
       }
+      // remove user
+      if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['remove'])){
+         $user = $_POST['username'];
+
+         $stmt = $conn->prepare("DELETE FROM user WHERE username = ?");
+         $stmt->bind_param('s', $user);
+         $stmt->execute();
+         $stmt->close();
+         echo"Remove Successful";
+      }
       $conn->close();
 ?>
 <!DOCTYPE html>
@@ -66,6 +76,16 @@
          color: lightgreen;
          border-radius: 19px;
       }
+      #remove_box{
+            width: 33%;
+            margin: 0 auto;
+      }
+      #rembut{
+         width: 100%;
+         background-color: black;
+         color: lightgreen;
+         border-radius: 19px;
+      }
    </style>
 </head>
 <body>
@@ -76,6 +96,12 @@
                   <label>Password:</label><br>
                   <input type="password" name="password" placeholder="Enter your pass"><br>
                   <input id="butform" type="submit" name="enter" value="Login">
+            </form>
+            <hr style="border: 2px solid black;">
+            <form action="login.php" method="post" id="remove_box">
+                  <label>Username:</label><br>
+                  <input type="text" name="username" placeholder="username" required>
+                  <input type="submit" name="remove" value="Remove User" id="rembut">
             </form>
 
       </div>
