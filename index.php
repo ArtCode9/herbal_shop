@@ -17,12 +17,16 @@
                         <a href="#contact">Contact</a>
                         <a href="#about">About</a>
                         <div id="iconNavBox">
-                           <div class="make-center"> 
+                           <div class="make-center">
+                              <a href="cart.php"> 
                               <img class="iconNav" src="src/shopcart.png" alt="shopcart">
+                              </a>
                               <p>سبد خرید</p>
                            </div>
                            <div class="make-center">
+                              <a href="login.php">
                               <img class="iconNav" src="src/profile.png" alt="">
+                              </a>
                               <p>ورود</p>
                            </div>
                         </div>
@@ -257,13 +261,16 @@
             </div>
       </div>
 
- <!--  <?php foreach($objects as $object):?>
+
+      
+
+
+ <!--<?php foreach($objects as $object):?>
                   <div class="product">
                         <div><?= $object->title ?></div>
                         <div><?= $object->description ?></div>
                   </div>
-       <?php endforeach;?> -->
-
+     <?php endforeach;?> -->
 
 <script src="active.js"></script>
 </body>
