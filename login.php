@@ -103,11 +103,7 @@
                   <input type="text" name="username" placeholder="username" required>
                   <input type="submit" name="remove" value="Remove User" id="rembut">
             </form>
-
+            <a href="index.php">Home Page</a>
       </div>
 </body>
 </html>
-<?php
-
-
-?>
