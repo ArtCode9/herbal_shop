@@ -1,18 +1,6 @@
 <?php
-      // Database connection
-      $servername = "localhost";
-      $username = "artcode";
-      $password = "1";
-      $dbname = "herbalshop";
+      include("connect.php");
 
-      $conn = new mysqli($servername, $username, $password, $dbname);
-
-      // check connection
-      if($conn->connect_error){
-         die("Connection failed : " . $conn->connect_error);
-      }else{
-         echo"connection success";
-      }
 
       // add user
       if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['enter'])){
@@ -40,7 +28,33 @@
          $stmt->close();
          echo"Remove Successful";
       }
-      $conn->close();
+      
+
+
+      // sign in 
+
+      if(isset($_POST['login'])){
+         $username = $_POST['username'];
+
+         $sql = "SELECT * FROM user WHERE username='$username'";
+         $result = $conn-> query($sql);
+         if($result->num_rows>0){
+            session_start();
+            $row=$result->fetch_assoc();
+            $_SESSION['username']=$row['username'];
+            header("Location: index.php");
+            exit();
+         }else{
+            echo"Not user found";
+         };
+
+         $conn->close();
+      };
+
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -95,7 +109,7 @@
                   <input type="text" name="username" placeholder="Your name"><br>
                   <label>Password:</label><br>
                   <input type="password" name="password" placeholder="Enter your pass"><br>
-                  <input id="butform" type="submit" name="enter" value="Login">
+                  <input id="butform" type="submit" name="enter" value="Register">
             </form>
             <hr style="border: 2px solid black;">
             <form action="login.php" method="post" id="remove_box">
@@ -105,5 +119,11 @@
             </form>
             <a href="index.php">Home Page</a>
       </div>
+            <!-- this part for sign to home page -->
+            <form action="login.php" method="post">
+                  <label>username:</label>
+                  <input type="text" name="username" placeholder="Enter your name to login">
+                  <input type="submit" name="login" id="butform">
+            </form>
 </body>
 </html>

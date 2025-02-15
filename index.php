@@ -1,3 +1,9 @@
+<?php
+       session_start();
+       include("connect.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +33,20 @@
                               <a href="login.php">
                               <img class="iconNav" src="src/profile.png" alt="">
                               </a>
-                              <p>ورود</p>
+                              <p>enter</p>
+                              <p>
+                                  hello  
+<?php
+      if(isset($_SESSION['username'])){
+            $username= $_SESSION['username'];
+            $query= mysqli_query($conn, "SELECT user.* FROM user WHERE user.username='$username'");
+            while($row= mysqli_fetch_array($query)){
+                  echo $row['username'];
+            }
+      }
+?> 
+                              </p>
+                              <a href="logout.php">logout</a>
                            </div>
                         </div>
                      </div>
@@ -265,12 +284,7 @@
       
 
 
- <!--<?php foreach($objects as $object):?>
-                  <div class="product">
-                        <div><?= $object->title ?></div>
-                        <div><?= $object->description ?></div>
-                  </div>
-     <?php endforeach;?> -->
+
 
 <script src="active.js"></script>
 </body>
