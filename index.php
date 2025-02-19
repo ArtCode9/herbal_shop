@@ -10,7 +10,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Herbal Shop</title>
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="CSS/style.css">
    <link rel="icon" href="src/logo.png">
 </head>
 <body>
@@ -300,8 +300,8 @@
 
           
       
-<script src="active.js"></script>
-<script src="active_pop.js"></script>
+<script src="js/active.js"></script>
+<script src="js/active_pop.js"></script>
 
 
 
