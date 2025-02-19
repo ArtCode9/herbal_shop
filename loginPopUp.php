@@ -1,4 +1,14 @@
+<style>
+#form {
+   width: 100%;
+   height: 100%;
+   border: 2px solid black;   
+   padding: 42px;
+   
+}
+</style>
 <div>
+
 <?php
 include("connect.php");
 
@@ -20,26 +30,16 @@ if(isset($_POST['login'])){
    $conn->close();
 };
 
-
-
-
 ?>
+
 <!-- this part for sign to home page -->
-<form action="loginPopUp.php" method="post">
+<form action="loginPopUp.php" method="post" id="form">
       <label>username:</label>
       <input type="text" name="username" placeholder="Enter your name to login">
+      <input type="text" name="password" placeholder="Enter Password">
       <input type="submit" name="login" id="butform">
+      <a href="login.php">Login</a>
 </form>
 
 </div>
-
-
-
-
-
-
-
-
-
-
 

@@ -286,13 +286,13 @@
 
           
 <!-- Tips : sometimes xampp does not load change you apply it just clear the catch the browser-->
-<!-- ============================================ -->
+<!-- ============================================&times; -->
 <!-- <button id="openPopup">Open Form</button> -->
 
 <div class="overlay" id="overlay">
     <div class="popup">
-        <span class="close" id="closePopup">&times;</span>
-        <h2>Form Title</h2>
+        <button class="close" id="closePopup">X</button>
+        <h2>Log In</h2>
       <?php 
                    include("loginPopUp.php");
       ?>

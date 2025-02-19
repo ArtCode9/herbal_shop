@@ -361,11 +361,17 @@ body{
    z-index: 1000;
 }
 .popup {
+   width: 80%;
+   height: 50%;
    position: absolute;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   background: white;
+   background: green;
    padding: 20px;
    border-radius: 5px;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -374,4 +380,14 @@ body{
    cursor: pointer;
    float: right;
    font-size: 20px;
+}
+#closePopup {
+   background-color: tomato;
+   width: 44px;
+   height: 34px;
+}
+#closePopup:hover {
+   background-color: black;
+   color: tomato;
+   cursor: pointer;
 }
