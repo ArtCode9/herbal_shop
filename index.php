@@ -23,10 +23,10 @@
                         <a href="#contact">Contact</a>
                         <a href="#about">About</a>
                         <div id="iconNavBox">
-                           <div class="make-center">
-                              <a href="cart.php">     
+                           <div class="make-center" id="openPopup">
+                              <span>     
                               <img class="iconNav" src="src/shopcart.png" alt="shopcart">
-                              </a>
+                              </span>
                               <p>سبد خرید</p>
                            </div>
 
@@ -253,20 +253,6 @@
                             </div>
                         </div>
                </div>
-               <div class="cardShop">
-<!-- ============================================ -->
-<button id="openPopup">Open Form</button>
-
-<div class="overlay" id="overlay">
-    <div class="popup">
-        <span class="close" id="closePopup">&times;</span>
-        <h2>Form Title</h2>
-        <input type="text" placeholder="text1">
-        <input type="text" placeholder="text2">
-    </div>
-</div>
-<!-- ======================================================== -->
-               </div>
             </div>
 
             <div class="footer">
@@ -299,7 +285,22 @@
       </div>
 
           
-      
+<!-- Tips : sometimes xampp does not load change you apply it just clear the catch the browser-->
+<!-- ============================================ -->
+<!-- <button id="openPopup">Open Form</button> -->
+
+<div class="overlay" id="overlay">
+    <div class="popup">
+        <span class="close" id="closePopup">&times;</span>
+        <h2>Form Title</h2>
+      <?php 
+                   include("loginPopUp.php");
+      ?>
+    </div>
+</div>
+<!-- ======================================================== -->
+
+
 <script src="js/active.js"></script>
 <script src="js/active_pop.js"></script>
 
