@@ -24,11 +24,12 @@
                         <a href="#about">About</a>
                         <div id="iconNavBox">
                            <div class="make-center">
-                              <a href="cart.php"> 
+                              <a href="cart.php">     
                               <img class="iconNav" src="src/shopcart.png" alt="shopcart">
                               </a>
                               <p>سبد خرید</p>
                            </div>
+
                            <div class="make-center">
                               <a href="login.php">
                               <img class="iconNav" src="src/profile.png" alt="">
@@ -48,6 +49,8 @@
                               </p>
                               <a href="logout.php">logout</a>
                            </div>
+
+
                         </div>
                      </div>
                      
@@ -250,6 +253,20 @@
                             </div>
                         </div>
                </div>
+               <div class="cardShop">
+<!-- ============================================ -->
+<button id="openPopup">Open Form</button>
+
+<div class="overlay" id="overlay">
+    <div class="popup">
+        <span class="close" id="closePopup">&times;</span>
+        <h2>Form Title</h2>
+        <input type="text" placeholder="text1">
+        <input type="text" placeholder="text2">
+    </div>
+</div>
+<!-- ======================================================== -->
+               </div>
             </div>
 
             <div class="footer">
@@ -278,20 +295,15 @@
                         <p>&copy;ArtCode</p>
                   </div>
             </div>
+
       </div>
 
-
+          
       
-
-
-
-
 <script src="active.js"></script>
+<script src="active_pop.js"></script>
+
+
+
 </body>
 </html>
-<?php  
-
-
-   
-
-?>
