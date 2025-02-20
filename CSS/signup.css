@@ -1,0 +1,52 @@
+body{
+   background-image: url("../src/img5.jpg");
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+}
+label {
+   color: white;
+}
+.LogBox{
+   width: 80%;
+   height: 50%px;
+   margin: 90px auto;
+   padding: 32px;
+   border-radius: 19px;
+   background-color: rgba(0, 0, 0, 0.2);
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+   font-size: 32px;
+}
+.LogBox input{
+   width: 100%;
+   border: none;
+   border-bottom: 2px solid black;
+   font-size: 32px;
+   padding: 16px;
+   margin: 12px;
+}
+#butform{
+   width: 100%;
+   background-color: black;
+   color: lightgreen;
+   border-radius: 19px;
+}
+#remove_box{
+      width: 33%;
+      margin: 0 auto;
+}
+#rembut{
+   width: 100%;
+   background-color: black;
+   color: lightgreen;
+   border-radius: 19px;
+}
+#home_link {
+   text-decoration: none;
+   color: green;
+   margin: 0 auto;
+}

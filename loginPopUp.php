@@ -11,7 +11,7 @@
    padding: 9px;
    font-size: 32px;
 }
-#form input{
+.input_form {
     height: 62px;
     width: 80%;
     background: none;
@@ -19,9 +19,11 @@
     padding: 0 15px;    
     border-radius: 3px;
     margin-top: 16px;
+    border: none;
+    border-bottom: 3px solid lightgreen;
 }
-#form input:focus{
-   border: 1px solid #00bcd4;
+.input_form:focus{
+   border: 3px solid lightgreen;
 }
 #form a {
    text-decoration: none;
@@ -30,11 +32,15 @@
 #form a:hover {
    color: black;
 }
-.loginBtn {
-   background-color: lightgreen;
+#loginBtn {
+   width: 40%;
+   height: 62px;
+   background: lightgreen;
    color: black;
+   border-radius: 9999px;
+   margin: 22px 0;
 }
-.loginBtn:hover {
+#loginBtn:hover {
    background-color: black;
    color: lightgreen;
 }
@@ -46,8 +52,9 @@ include("connect.php");
 
 if(isset($_POST['login'])){
    $username = $_POST['username'];
+   $password = $_POST['password'];
 
-   $sql = "SELECT * FROM user WHERE username='$username'";
+   $sql = "SELECT * FROM user WHERE username='$username' AND password='$password'";
    $result = $conn-> query($sql);
    if($result->num_rows>0){
       session_start();
@@ -56,7 +63,11 @@ if(isset($_POST['login'])){
       header("Location: index.php");
       exit();
    }else{
-      echo"Not user found";
+      function fun_alert ($message){
+         echo"<script>alert('$message')</script>";
+      };
+      fun_alert('User not found!');
+      header("Location: index.php");
    };
 
    $conn->close();
@@ -67,10 +78,10 @@ if(isset($_POST['login'])){
 <!-- this part for sign to home page -->
 <form action="loginPopUp.php" method="post" id="form">
       
-      <input type="text" name="username" placeholder="Enter your name to login">
-      <input type="text" name="password" placeholder="Enter Password">
-      <input type="submit" name="login" value="Login" class="loginBtn">
-      <a href="login.php">sign up</a>
+      <input type="text" name="username" placeholder="Enter your name to login" class="input_form">
+      <input type="text" name="password" placeholder="Enter Password" class="input_form">
+      <input type="submit" name="login" value="Login" id="loginBtn">
+      <a href="signup.php">sign up</a>
 </form>
 
 </div>

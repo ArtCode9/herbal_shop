@@ -18,7 +18,8 @@
          };
 
       }
-      // remove user
+
+/*       // remove user
       if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['remove'])){
          $user = $_POST['username'];
 
@@ -27,7 +28,7 @@
          $stmt->execute();
          $stmt->close();
          echo"Remove Successful";
-      }
+      } */
       
 
 ?>
@@ -37,45 +38,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Login Page</title>
-   <style>
-      .LogBox{
-         width: 80%;
-         height: 460px;
-         margin: 0 auto;
-         padding: 32px;
-         border: 2px solid black;
-         border-radius: 19px;
-         background-color: lightgreen;
-         display: flex;
-         justify-content: center;
-         align-content: center;
-         font-size: 32px;
-      }
-      .LogBox input{
-         width: 100%;
-         border: none;
-         border-bottom: 2px solid black;
-         font-size: 32px;
-         padding: 16px;
-         margin: 12px;
-      }
-      #butform{
-         width: 100%;
-         background-color: black;
-         color: lightgreen;
-         border-radius: 19px;
-      }
-      #remove_box{
-            width: 33%;
-            margin: 0 auto;
-      }
-      #rembut{
-         width: 100%;
-         background-color: black;
-         color: lightgreen;
-         border-radius: 19px;
-      }
-   </style>
+   <link rel="stylesheet" href="CSS/signup.css">
 </head>
 <body>
       <div class="LogBox">
@@ -83,16 +46,20 @@
                   <label>Username:</label><br>
                   <input type="text" name="username" placeholder="Your name"><br>
                   <label>Password:</label><br>
-                  <input type="password" name="password" placeholder="Enter your pass"><br>
+                  <input type="password" name="password" placeholder="Enter your password"><br>
+                  <label>Email:</label><br>
+                  <input type="text" name="email" placeholder="Enter your Email">
                   <input id="butform" type="submit" name="enter" value="Register">
+                  <a href="index.php" id="home_link">Home Page</a>
             </form>
-            <hr style="border: 2px solid black;">
-            <form action="login.php" method="post" id="remove_box">
+
+       
+       <!--      <form action="login.php" method="post" id="remove_box">
                   <label>Username:</label><br>
                   <input type="text" name="username" placeholder="username" required>
                   <input type="submit" name="remove" value="Remove User" id="rembut">
-            </form>
-            <a href="index.php">Home Page</a>
+            </form> -->
+
       </div>
            
 </body>
