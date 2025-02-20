@@ -42,7 +42,7 @@
 </head>
 <body>
       <div class="LogBox">
-            <form action="login.php" method="post">
+            <form action="signup.php" method="post">
                   <label>Username:</label><br>
                   <input type="text" name="username" placeholder="Your name"><br>
                   <label>Password:</label><br>

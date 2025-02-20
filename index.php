@@ -150,7 +150,20 @@
                         </div>
                </div>
                <div class="cardShop">
-               <img class="cardImgShop" src="src/amino-zink.jpg" alt="amino-zink">
+               <img class="cardImgShop" src="src/1-1.jpg" alt="amino-zink">
+                        <h3>حنا</h3>
+                        <p>فن آوران زرین گوهر</p>
+                        
+                        <div class="cardShopCart">
+                              <img class="cardPlusShop" src="src/plus.png" alt="">
+                            <div>
+                              <h4>178000</h4>
+                              <p>220000</p>
+                            </div>
+                        </div>
+               </div>
+               <div class="cardShop">
+               <img class="cardImgShop" src="src/1-2.jpg" alt="amino-zink">
                         <h3>آمینو زینک</h3>
                         <p>فن آوران زرین گوهر</p>
                         
@@ -163,7 +176,7 @@
                         </div>
                </div>
                <div class="cardShop">
-               <img class="cardImgShop" src="src/amino-zink.jpg" alt="amino-zink">
+               <img class="cardImgShop" src="src/1-3.jpg" alt="amino-zink">
                         <h3>آمینو زینک</h3>
                         <p>فن آوران زرین گوهر</p>
                         
@@ -176,7 +189,7 @@
                         </div>
                </div>
                <div class="cardShop">
-               <img class="cardImgShop" src="src/amino-zink.jpg" alt="amino-zink">
+               <img class="cardImgShop" src="src/1-4.jpg" alt="amino-zink">
                         <h3>آمینو زینک</h3>
                         <p>فن آوران زرین گوهر</p>
                         
@@ -189,7 +202,7 @@
                         </div>
                </div>
                <div class="cardShop">
-               <img class="cardImgShop" src="src/amino-zink.jpg" alt="amino-zink">
+               <img class="cardImgShop" src="src/1-5.jpg" alt="amino-zink">
                         <h3>آمینو زینک</h3>
                         <p>فن آوران زرین گوهر</p>
                         
@@ -202,20 +215,7 @@
                         </div>
                </div>
                <div class="cardShop">
-               <img class="cardImgShop" src="src/amino-zink.jpg" alt="amino-zink">
-                        <h3>آمینو زینک</h3>
-                        <p>فن آوران زرین گوهر</p>
-                        
-                        <div class="cardShopCart">
-                              <img class="cardPlusShop" src="src/plus.png" alt="">
-                            <div>
-                              <h4>178000</h4>
-                              <p>220000</p>
-                            </div>
-                        </div>
-               </div>
-               <div class="cardShop">
-               <img class="cardImgShop" src="src/amino-zink.jpg" alt="amino-zink">
+               <img class="cardImgShop" src="src/1-6.jpg" alt="amino-zink">
                         <h3>آمینو زینک</h3>
                         <p>فن آوران زرین گوهر</p>
                         
