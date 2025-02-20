@@ -23,7 +23,7 @@
                         <a href="#contact">Contact</a>
                         <a href="#about">About</a>
                         <div id="iconNavBox">
-                           <div class="make-center" id="openPopup">
+                           <div class="make-center" >
                               <span>     
                               <img class="iconNav" src="src/shopcart.png" alt="shopcart">
                               </span>
@@ -31,9 +31,9 @@
                            </div>
 
                            <div class="make-center">
-                              <a href="login.php">
+                              <span id="openPopup">
                               <img class="iconNav" src="src/profile.png" alt="">
-                              </a>
+                              </span>
                               <p>enter</p>
                               <p>
                                   hello  
@@ -291,11 +291,15 @@
 
 <div class="overlay" id="overlay">
     <div class="popup">
+      <div id="popBoxNav">
         <button class="close" id="closePopup">X</button>
-        <h2>Log In</h2>
+        
+        </div>
+        <div class="popBoxNav_log">
       <?php 
                    include("loginPopUp.php");
       ?>
+      </div>
     </div>
 </div>
 <!-- ======================================================== -->
